@@ -3,7 +3,7 @@ import React from "react";
 const Card3 = () => {
   return (
     <div className="Card3 bg-[#9DCCFF] bg-opacity-[0.2] pb-[50px]">
-      <div className="flex justify-between w-[90%] mx-auto pt-[50px]">
+      <div className="sm:flex justify-between items-center w-[90%] mx-auto pt-[50px]">
         <div className="text-[30px] font-[500]">Related Blog</div>
         <div className=" text-[20px] font-[700] text-[#49BBBD]">See all</div>
       </div>

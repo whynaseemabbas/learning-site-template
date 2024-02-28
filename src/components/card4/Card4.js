@@ -3,7 +3,7 @@ import React from "react";
 const Card4 = () => {
   return (
     <div className=" h-[650px] ">
-      <div className="flex justify-between w-[93%] mx-auto my-[40px]">
+      <div className="flex justify-between items-center w-[93%] mx-auto my-[40px]">
         <div className="text-[30px] font-[500] text-[#000000]">
           Marketing Articles
         </div>

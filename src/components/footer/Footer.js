@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" bg-[#252641]  sm:mt-[2051px] lg:mt-[0px] md:mt-[500px] lg:mt-[0px]">
+    <div className=" bg-[#252641]  sm:mt-[1451px] lg:mt-[0px] md:mt-[500px] lg:mt-[0px]">
       <div className="flex-col justify-center items-center w-[50%] mx-auto">
-        <div className="flex justify-center items-center pt-[50px]">
+        <div className="flex justify-center items-center sm:flex sm:flex-col md:flex-row lg:flex-row pt-[50px]">
           <img src="./images/footerLogo.svg" width="80px" />
           <div className="px-[20px]">
             <svg
@@ -27,17 +27,17 @@ const Footer = () => {
             Virtual Class for Zoom
           </div>
         </div>
-        <div className="flex justify-center text-[26px] font-[500] text-[#B2B3CF] pt-[60px]">
+        <div className="sm:text-center flex justify-center text-[26px] font-[500] text-[#B2B3CF] pt-[60px]">
           <div>Subscribe to get our Newsletter</div>
         </div>
-        <div className="flex justify-center items-center pt-[15px]">
+        <div className="flex justify-center items-center sm:flex sm:flex-col sm:items-center sm:gap-5 md:flex-row lg:flex-row pt-[15px]">
           <input
-            className=" placeholder:text-[#83839A] pl-[15px] bg-[#252641] border border-[#B2B3CF] rounded-[80px] px-[60px] py-[5px] mr-[15px]"
+            className=" sm:w-[100%] lg:w-[50%] md:w-[50%] placeholder:text-[#83839A] pl-[15px] bg-[#252641] border border-[#B2B3CF] rounded-[80px] px-[60px] py-[5px] mr-[15px]"
             type="text"
             placeholder="Your Email"
           ></input>
           <button
-            className="bg-[#49BBBD] px-[30px] py-[8px] rounded-[60px] text-[12px] font-[500] text-[#ffffff] "
+            className=" bg-[#49BBBD] px-[30px] py-[8px] rounded-[60px] text-[12px] font-[500] text-[#ffffff] "
             type="button"
           >
             Subscribe
@@ -88,7 +88,7 @@ const Footer = () => {
             Terms & Conditions
           </div>
         </div>
-        <div className=" flex justify-center text-[18px] font-[400] text-[#B2B3CF] pt-[15px]">
+        <div className="sm:text-center flex justify-center text-[18px] font-[400] text-[#B2B3CF] pt-[15px]">
           © 2021 Class Technologies Inc.
         </div>
       </div>
