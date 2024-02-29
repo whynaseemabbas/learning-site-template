@@ -1,25 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
+import { FaTimes } from "react-icons/fa";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const Nav = (
+    <>
+      <div className="sm:transition duration-700 ease-in-out lg:hidden absolute top-16 pb-[10px] w-full left-0 right-0 bg-[#ffffff]">
+        <div className="lg:flex md:flex md:flex-col md:items-center ">
+          <div className="text-center md:w-full cursor-pointer border border-black border-indigo-100 p-[10px] mb-[15px] hover:bg-sky-50">
+            Home
+          </div>
+          <div className="text-center md:w-full cursor-pointer border border-black border-indigo-100 p-[10px] mb-[15px] hover:bg-sky-50">
+            Courses
+          </div>
+          <div className="text-center md:w-full cursor-pointer border border-black border-indigo-100 p-[10px] mb-[15px] hover:bg-sky-50">
+            Careers
+          </div>
+          <div className="text-center md:w-full cursor-pointer border border-black border-indigo-100 p-[10px] mb-[15px] hover:bg-sky-50">
+            Blog
+          </div>
+          <div className="text-center md:w-full cursor-pointer border border-black border-indigo-100 p-[10px] mb-[15px] hover:bg-sky-50">
+            About Us
+          </div>
+        </div>
+        <div className="flex items-center  lg:flex md:hidden border border-black border-indigo-100 p-[10px] hover:bg-sky-50 cursor-pointer sm:flex sm:items-center sm:justify-center">
+          <div className="bg-[#DFDCDC] w-[30%] sm:w-[10%] rounded-[68px]">
+            <img
+              className=""
+              src="./images/headerImg.svg "
+              style={{ width: "100%" }}
+            />
+          </div>
+          <div className="flex items-center">
+            <div className="pl-[10px] pr-[5px]">Lina</div>
+            <div>
+              <svg
+                width="13"
+                height="8"
+                viewBox="0 0 13 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.02734 7.66016C6.34375 7.97656 6.87109 7.97656 7.1875 7.66016L11.9688 2.87891C12.3203 2.52734 12.3203 2 11.9688 1.68359L11.1953 0.875C10.8438 0.558594 10.3164 0.558594 10 0.875L6.58984 4.28516L3.21484 0.875C2.89844 0.558594 2.37109 0.558594 2.01953 0.875L1.24609 1.68359C0.894531 2 0.894531 2.52734 1.24609 2.87891L6.02734 7.66016Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+
   return (
     <div className="bg-[#ffffff]">
-      <div className="flex justify-between items-center w-[90%] p-[15px] mx-auto sm:w-[90%] sm:mx-auto">
-        <div className=" cursor-pointer sm:absolute sm:right-10 lg:hidden md:relative md:left-0 ">
-          {/* <img src="\images\menu.11 1 (1).png" /> */}
-          <svg
-            width="40"
-            height="41"
-            viewBox="0 0 40 41"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M28.38 0.5H11.62C4.34 0.5 0 4.84 0 12.12V28.86C0 36.16 4.34 40.5 11.62 40.5H28.36C35.64 40.5 39.98 36.16 39.98 28.88V12.12C40 4.84 35.66 0.5 28.38 0.5ZM30 31H10C9.18 31 8.5 30.32 8.5 29.5C8.5 28.68 9.18 28 10 28H30C30.82 28 31.5 28.68 31.5 29.5C31.5 30.32 30.82 31 30 31ZM30 22H10C9.18 22 8.5 21.32 8.5 20.5C8.5 19.68 9.18 19 10 19H30C30.82 19 31.5 19.68 31.5 20.5C31.5 21.32 30.82 22 30 22ZM30 13H10C9.18 13 8.5 12.32 8.5 11.5C8.5 10.68 9.18 10 10 10H30C30.82 10 31.5 10.68 31.5 11.5C31.5 12.32 30.82 13 30 13Z"
-              fill="#5B5B5B"
-            />
-          </svg>
-        </div>
-        <div className="md:w-[40%] md:ml-auto md:ml-auto">
+      <div className="flex justify-between items-center w-[90%] p-[15px] mx-auto  sm:w-[90%] sm:mx-auto">
+        <div className="md:w-[40%] md:ml-auto sm:relative left-[-20px] md:ml-auto">
           <svg
             width="90"
             height="40"
@@ -38,6 +81,7 @@ const Header = () => {
             />
           </svg>
         </div>
+
         <div className="flex items-center text-[#5B5B5B] text-[22px] font-[400]">
           <div className=" flex sm:hidden lg:flex">
             <div className="pr-[45px] pointer:cursor">Home</div>
@@ -72,6 +116,14 @@ const Header = () => {
               </div>
             </div>
           </div>
+          <div>{isOpen && Nav}</div>
+
+          <button
+            className="block lg:hidden md:absolute left-10 "
+            onClick={handleClick}
+          >
+            {isOpen ? <FaTimes /> : <AiOutlineMenu />}
+          </button>
         </div>
       </div>
     </div>
