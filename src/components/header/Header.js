@@ -13,19 +13,19 @@ const Header = () => {
     <>
       <div className="sm:transition duration-700 ease-in-out lg:hidden absolute top-16 pb-[10px] w-full left-0 right-0 bg-[#ffffff]">
         <div className="lg:flex md:flex md:flex-col md:items-center ">
-          <div className="text-center md:w-full cursor-pointer border border-black border-indigo-100 p-[10px] mb-[15px] hover:bg-sky-50">
+          <div className="text-center hover:text-black md:w-full cursor-pointer border border-black border-indigo-100 p-[10px] mb-[15px] hover:bg-sky-50">
             Home
           </div>
-          <div className="text-center md:w-full cursor-pointer border border-black border-indigo-100 p-[10px] mb-[15px] hover:bg-sky-50">
+          <div className="text-center hover:text-black md:w-full cursor-pointer border border-black border-indigo-100 p-[10px] mb-[15px] hover:bg-sky-50">
             Courses
           </div>
-          <div className="text-center md:w-full cursor-pointer border border-black border-indigo-100 p-[10px] mb-[15px] hover:bg-sky-50">
+          <div className="text-center hover:text-black md:w-full cursor-pointer border border-black border-indigo-100 p-[10px] mb-[15px] hover:bg-sky-50">
             Careers
           </div>
-          <div className="text-center md:w-full cursor-pointer border border-black border-indigo-100 p-[10px] mb-[15px] hover:bg-sky-50">
+          <div className="text-center hover:text-black md:w-full cursor-pointer border border-black border-indigo-100 p-[10px] mb-[15px] hover:bg-sky-50">
             Blog
           </div>
-          <div className="text-center md:w-full cursor-pointer border border-black border-indigo-100 p-[10px] mb-[15px] hover:bg-sky-50">
+          <div className="text-center hover:text-black md:w-full cursor-pointer border border-black border-indigo-100 p-[10px] mb-[15px] hover:bg-sky-50">
             About Us
           </div>
         </div>
@@ -37,8 +37,8 @@ const Header = () => {
               style={{ width: "100%" }}
             />
           </div>
-          <div className="flex items-center">
-            <div className="pl-[10px] pr-[5px]">Lina</div>
+          <div className="flex items-center hover:text-black">
+            <div className="pl-[10px] pr-[5px] ">Lina</div>
             <div>
               <svg
                 width="13"
@@ -84,11 +84,21 @@ const Header = () => {
 
         <div className="flex items-center text-[#5B5B5B] text-[22px] font-[400]">
           <div className=" flex sm:hidden lg:flex">
-            <div className="pr-[45px] pointer:cursor">Home</div>
-            <div className="pr-[45px]">Courses</div>
-            <div className="pr-[45px]">Careers</div>
-            <div className="pr-[45px]">Blog</div>
-            <div className="pr-[45px]">About Us</div>
+            <div className="pr-[45px] cursor-pointer hover:text-black">
+              Home
+            </div>
+            <div className="pr-[45px] cursor-pointer hover:text-black">
+              Courses
+            </div>
+            <div className="pr-[45px] cursor-pointer hover:text-black">
+              Careers
+            </div>
+            <div className="pr-[45px] cursor-pointer hover:text-black">
+              Blog
+            </div>
+            <div className="pr-[45px] cursor-pointer hover:text-black">
+              About Us
+            </div>
           </div>
           <div className="flex items-center sm:hidden lg:flex md:flex md:items-center">
             <div className="bg-[#DFDCDC] w-[30%] rounded-[68px]">
@@ -99,8 +109,8 @@ const Header = () => {
               />
             </div>
             <div className="flex items-center">
-              <div className="pl-[10px] pr-[5px]">Lina</div>
-              <div>
+              <div className="pl-[10px] pr-[5px] text-black">Lina</div>
+              <div className="cursor-pointer">
                 <svg
                   width="13"
                   height="8"

@@ -2,11 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" bg-[#252641]  sm:mt-[1451px] lg:mt-[0px] md:mt-[500px] lg:mt-[0px]">
+    <div className=" bg-[#252641]  sm:mt-[1400px] lg:mt-[0px] md:mt-[500px] lg:mt-[0px]">
       <div className="flex-col justify-center items-center w-[50%] mx-auto">
         <div className="flex justify-center items-center sm:flex sm:flex-col md:flex-row lg:flex-row pt-[50px]">
           <img src="./images/footerLogo.svg" width="80px" />
-          <div className="px-[20px]">
+          <div className="px-[20px] sm:hidden sm:text-center md:flex">
             <svg
               width="1"
               height="63"

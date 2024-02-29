@@ -7,7 +7,9 @@ const Card4 = () => {
         <div className="text-[30px] font-[500] text-[#000000]">
           Marketing Articles
         </div>
-        <div className="text-[20px] font-[700] text-[#49BBBD]">See all</div>
+        <div className="text-[20px] font-[700] text-[#49BBBD] cursor-pointer">
+          See all
+        </div>
       </div>
 
       <div className="flex justify-between w-[90%] mx-auto sm:flex sm:flex-col  sm:items-center  md:flex md:flex-row md:flex md:flex-col lg:flex lg:flex-row sm:gap-10 ">

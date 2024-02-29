@@ -5,7 +5,9 @@ const Card3 = () => {
     <div className="Card3 bg-[#9DCCFF] bg-opacity-[0.2] pb-[50px]">
       <div className="sm:flex justify-between items-center w-[90%] mx-auto pt-[50px]">
         <div className="text-[30px] font-[500]">Related Blog</div>
-        <div className=" text-[20px] font-[700] text-[#49BBBD]">See all</div>
+        <div className=" text-[20px] font-[700] text-[#49BBBD] cursor-pointer">
+          See all
+        </div>
       </div>
       <div className="flex justify-between w-[90%] mx-auto pt-[20px] sm:flex sm:flex-col sm:items-center sm:gap-10 lg:flex lg:flex-row">
         <div className="bg-[#ffffff] rounded-[20px] w-[100%]  shadow-[0px_18.83px_47.08px_#2f327d1a]">
@@ -29,7 +31,7 @@ const Card3 = () => {
                 Michael Chasen, integrates exclusively...
               </div>
               <div className="flex justify-between items-center pt-[40px]">
-                <div className="font-[400px] text-[20px] text-[#696984] underline">
+                <div className="font-[400px] text-[20px] text-[#696984] underline cursor-pointer hover:text-black">
                   Read more
                 </div>
                 <div className="flex items-center">
@@ -76,7 +78,7 @@ const Card3 = () => {
                 Michael Chasen, integrates exclusively...
               </div>
               <div className="flex justify-between items-center pt-[40px]">
-                <div className="font-[400px] text-[20px] text-[#696984] underline">
+                <div className="font-[400px] text-[20px] text-[#696984] underline cursor-pointer hover:text-black">
                   Read more
                 </div>
                 <div className=" flex items-center">
@@ -102,10 +104,10 @@ const Card3 = () => {
         </div>
       </div>
       <div className="flex justify-end items-center w-[95%] pt-[50px] sm:flex sm:justify-between sm:w-[88%] sm:mx-auto md:flex md:justify-end">
-        <div className="bg-[#49BBBD]  text-[#ffffff] text-[24px] font-[900] p-[10px] mr-[15px] rounded-[4px]">
+        <div className="bg-[#49BBBD]  text-[#ffffff] text-[24px] font-[900] p-[10px] mr-[15px] rounded-[4px] cursor-pointer ">
           <img src="./images/leftArrow.svg" />
         </div>
-        <div className=" bg-[#49BBBD] text-[#ffffff] text-[24px] font-[900] p-[10px] rounded-[4px]">
+        <div className=" bg-[#49BBBD] text-[#ffffff] text-[24px] font-[900] p-[10px] rounded-[4px] cursor-pointer">
           <img src="./images/rightArrow.svg" alt="rightArrow" />
         </div>
       </div>
